@@ -3,8 +3,6 @@
 // Kown as a DOM element
 // console.dir(window.document);
 
-// console.log(event); best way to explore the data provided to an event object.
-
 // window.document.querySelector("button"); // use in console brower to get an object representation of the <button> element.
 
 // var buttonEl = document.querySelector("#save-task");
@@ -16,6 +14,7 @@
 var tasksToDoEl = document.querySelector("#tasks-to-do"); 
 var tasksInProgressEl = document.querySelector("#tasks-in-progress");
 var tasksCompletedEl = document.querySelector("#tasks-completed");
+
 
 var pageContentEl = document.querySelector("#page-content");
 var taskIdCounter = 0;
@@ -186,6 +185,16 @@ listItemEl.appendChild(taskInfoEl);
 
 }; 
 
+var buttonEl = document.querySelector("#save-task"); 
+var tasksToDoEl = document.querySelector("#tasks-to-do"); 
+
+var createTaskHandler = function() { 
+  var listItemEl = document.createElement("li"); 
+  listItemEl.className = "task-item"; 
+  listItemEl.textContent = "This is a new task."; 
+  tasksToDoEl.appendChild(listItemEl); 
+  }; 
+
 
 // NEW FUNCTION START
 
@@ -269,4 +278,5 @@ var taskStatusChangeHandler = function(event) {
   pageContentEl.addEventListener("change", taskStatusChangeHandler);
 
 
+buttonEl.addEventListener("click", createTaskHandler);
 
