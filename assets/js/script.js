@@ -188,6 +188,8 @@ return actionContainerEl;
 
 formEl.addEventListener("submit", taskFormHandler);
 
+formEl.addEventListener("submit", taskFormHandler);
+
 // THIS FUNCTION ADDS AND HTML ELEMENT USING DOM
 var createTaskHandler = function(event) {
    event.preventDefault();
