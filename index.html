@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>Taskinator</title>
+  <title>Taskinator</title>
 
-    <!--STYLESHEET PLACE -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <!--STYLESHEET PLACE -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
 
 </head>
 
 <body>
-  
-    <!--HEADER START -->
 
-<header>
+  <!--HEADER START -->
+
+  <header>
     <h1 class="page-title">Taskinator</h1>
     <p>Click the button below to add a new task!</p>
 
@@ -27,25 +28,25 @@
         <input type="text" name="task-name" placeholder="Enter Task Name" />
       </div>
 
-        <!--OPTION ELEMENT CREATES DROPDOWN MENU-->
-        <div class="form-group">
+      <!--OPTION ELEMENT CREATES DROPDOWN MENU-->
+      <div class="form-group">
         <select name="task-type" class="select-dropdown">
-            <option value="" disabled selected>Pick a task type</option>
-            <option value="Print">Print</option>
-            <option value="Web">Web</option>
-            <option value="Mobile">Mobile</option>
-          </select>
-        </div>
+          <option value="" disabled selected>Pick a task type</option>
+          <option value="Print">Print</option>
+          <option value="Web">Web</option>
+          <option value="Mobile">Mobile</option>
+        </select>
+      </div>
 
-        <div class="form-group">
+      <div class="form-group">
         <button class="btn" id="save-task" type="submit">Add Task</button>
-     </div>
+      </div>
     </form>
-</header>
+  </header>
 
-<main class="page-content" id="page-content">
-  
-  <!-- To Do List -->
+  <main class="page-content" id="page-content">
+
+    <!-- To Do List -->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks To Do</h2>
       <ul class="task-list" id="tasks-to-do"></ul>
@@ -57,7 +58,7 @@
       <h2 class="list-title">Tasks In Progress</h2>
       <ul class="task-list" id="tasks-in-progress"></ul>
     </section>
-    
+
     <!-- Tasks Completed -->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks Completed</h2>
@@ -66,14 +67,14 @@
 
   </main>
 
-    <!--FOOTER START -->
-    <footer>
-        &copy;2021 by Taskinator
-      </footer>
+  <!--FOOTER START -->
+  <footer>
+    &copy;2021 by Taskinator
+  </footer>
 
-    <!--SCRIPT SRC-->
-    <script src="./assets/js/script.js"></script>
-  
+  <!--SCRIPT SRC-->
+  <script src="./assets/js/script.js"></script>
+
 </body>
 
 </html>
